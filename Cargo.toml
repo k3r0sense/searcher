@@ -1,0 +1,15 @@
+[package]
+name = "searcher"
+version = "0.1.0"
+edition = "2024"
+
+[profile.release]
+lto = "fat"
+opt-level = "z"
+codegen-units = 1
+panic = "abort"
+strip = "symbols"
+debug = false
+incremental = false
+
+[dependencies]
