@@ -86,7 +86,7 @@ fn main() {
         println!("{}", path.display());
     }
 
-    eprintln!("Найдено: {}", results.len());
+    eprintln!("Found: {}", results.len());
     eprintln!(
         "Checked: {} | Access errors: {} | Threads: {}",
         scanned_entries.load(Ordering::Relaxed),
